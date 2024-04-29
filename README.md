@@ -16,4 +16,4 @@ Accessing the troubleshooting by looking into a system like a black box, without
 - Listing of supported systems/servers, protocols
   
 ## Contributions and changelogs
-Always added via push and commits in description. Format should be DATE-TASK/CHANGE-USER-REASON (i.e. "29/4/2024-Documentation-Creation"). 
+Always added via push and commits in description. Format should be DATE-TASK/CHANGE-USER-REASON (i.e. "29/4/2024-Documentation-MS-Creation"). 
