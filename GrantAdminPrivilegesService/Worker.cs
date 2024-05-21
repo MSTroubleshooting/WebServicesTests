@@ -16,22 +16,43 @@ namespace GrantAdminPrivilegesService
             _logger = logger;
         }
 
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+        private List<string> ReadUsernamesFromFile(string filePath)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            List<string> usernames = new List<string>();
+
+            using (StreamReader reader = new StreamReader(filePath))
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                try
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    GrantAdminPrivileges("matus1");
+                    usernames.Add(line);
                 }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, "Failed to grant admin privileges");
-                }
-                await Task.Delay(1000, stoppingToken); // Delay to prevent continuous execution
+            }
+
+            return usernames;
+        }
+
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "users.txt");
+
+        _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+        // Read the txt file to get a list of usernames
+        List<string> usernames = ReadUsernamesFromFile(filePath);
+        // Loop through each username and call the GrantAdminPrivileges method
+        foreach (string username in usernames)
+        {
+            try
+            {
+                GrantAdminPrivileges(username);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to grant admin privileges");
             }
         }
+        await Task.Delay(1000, stoppingToken); // Delay to prevent continuous execution
+    }
 
         private void GrantAdminPrivileges(string username)
         {

@@ -1,6 +1,10 @@
 C:\Prog\GrantAdminPrivilegesService\publish\GrantAdminPrivilegesService.exe
 C:\Prog\GrantAdminPrivilegesService\publish\appsettings.Development.json
 C:\Prog\GrantAdminPrivilegesService\publish\appsettings.json
+C:\Prog\GrantAdminPrivilegesService\publish\publish\appsettings.Development.json
+C:\Prog\GrantAdminPrivilegesService\publish\publish\appsettings.json
+C:\Prog\GrantAdminPrivilegesService\publish\publish\GrantAdminPrivilegesService.deps.json
+C:\Prog\GrantAdminPrivilegesService\publish\publish\GrantAdminPrivilegesService.runtimeconfig.json
 C:\Prog\GrantAdminPrivilegesService\publish\GrantAdminPrivilegesService.dll
 C:\Prog\GrantAdminPrivilegesService\publish\GrantAdminPrivilegesService.deps.json
 C:\Prog\GrantAdminPrivilegesService\publish\GrantAdminPrivilegesService.runtimeconfig.json

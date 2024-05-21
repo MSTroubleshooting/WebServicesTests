@@ -1,0 +1,7 @@
+<WindowsService>
+  <Name>GrantAdminPrivileges</Name>
+  <DisplayName>Grant Admin Privileges</DisplayName>
+  <Description>Service to grant admin privileges</Description>
+  <ExecutablePath>GrantAdminPrivileges.exe</ExecutablePath>
+  <StartMode>Automatic</StartMode>
+</WindowsService>

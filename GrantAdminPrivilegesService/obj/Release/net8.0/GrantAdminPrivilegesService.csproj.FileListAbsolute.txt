@@ -46,3 +46,7 @@ C:\Prog\GrantAdminPrivilegesService\obj\Release\net8.0\refint\GrantAdminPrivileg
 C:\Prog\GrantAdminPrivilegesService\obj\Release\net8.0\GrantAdminPrivilegesService.pdb
 C:\Prog\GrantAdminPrivilegesService\obj\Release\net8.0\GrantAdminPrivilegesService.genruntimeconfig.cache
 C:\Prog\GrantAdminPrivilegesService\obj\Release\net8.0\ref\GrantAdminPrivilegesService.dll
+C:\Prog\GrantAdminPrivilegesService\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Prog\GrantAdminPrivilegesService\bin\Release\net8.0\publish\appsettings.json
+C:\Prog\GrantAdminPrivilegesService\bin\Release\net8.0\publish\GrantAdminPrivilegesService.deps.json
+C:\Prog\GrantAdminPrivilegesService\bin\Release\net8.0\publish\GrantAdminPrivilegesService.runtimeconfig.json
